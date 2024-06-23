@@ -1,8 +1,10 @@
-# 1. Large Language Model Project 1
+## 1. Large Language Model Project 1
 
 #### In this project, we'll learn more about search and use Elastic Search for practice.
 
-* I ran this code below to download Elastic search image and start the container:
+* Notebook for this project is <https://github.com/bluemusk24/LLM-RAG/blob/main/homework-01/llm-homwork-01.ipynb>
+
+* I ran this code below to download Elastic search image and start the container locally:
 ```bash
 docker run -it \                 
    --name elasticsearch \
@@ -40,7 +42,7 @@ for course in documents_raw:
         documents.append(doc)
 ```
 
-### Calculate the number Token for the prompt using OpenAI 'gpt-4o' model
+#### Calculate the number Token for the prompt using OpenAI 'gpt-4o' model
 
 * Install the token library and run these codes below:
 ```bash
