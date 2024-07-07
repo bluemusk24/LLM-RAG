@@ -1,4 +1,14 @@
-# Running Ollama with Docker
+## Downloading Ollama locally and running phi3 mini LLM
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+
+ollama start
+
+ollama run phi3
+```
+
+## Running Ollama with Docker
 
 ```bash
 docker run -it \
@@ -87,3 +97,17 @@ ollama start
 ```
 
 * the jupyter notebook for the aforementioned dockerfile is [gemma.ipynb](https://github.com/bluemusk24/LLM-RAG/blob/main/homework-02/gemma.ipynb)
+
+
+### Note: it's advisable to run open-source LLMs on a GPU machine. Saturn cloud or google-colab are necessary notebooks with access to GPU. 
+
+* ensure to include the following codes below in the notebook:
+
+```bash
+pip install -U transformers accelerate bitsandbytes
+
+import os
+os.getenv(hugging-face-token)
+
+!nvidia-smi
+```
