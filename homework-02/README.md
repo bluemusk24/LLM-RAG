@@ -68,7 +68,7 @@ docker exec -it ollama ollama pull gemma:2b
 du -hs ollama_files/
 ```
 
-# Contents of the dockefile to add more weights 
+# Contents of the dockerfile to add more weights 
 
 ```bash
 FROM ollama/ollama
@@ -82,4 +82,8 @@ COPY ./ollama_files/ /root/.ollama/
 docker build -t ollama-gemma2b .
 
 docker run -it --rm -p 11434:11434 ollama-gemma2b
+
+ollama start
 ```
+
+* the jupyter notebook for the aforementioned container is [gemma.ipynb]https://github.com/bluemusk24/LLM-RAG/blob/main/homework-02/gemma.ipynb
