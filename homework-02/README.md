@@ -86,4 +86,4 @@ docker run -it --rm -p 11434:11434 ollama-gemma2b
 ollama start
 ```
 
-* the jupyter notebook for the aforementioned container is [gemma.ipynb]https://github.com/bluemusk24/LLM-RAG/blob/main/homework-02/gemma.ipynb
+* the jupyter notebook for the aforementioned dockerfile is [gemma.ipynb](https://github.com/bluemusk24/LLM-RAG/blob/main/homework-02/gemma.ipynb)
