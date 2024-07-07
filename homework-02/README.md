@@ -60,7 +60,7 @@ docker run -it \
     ollama/ollama
 ```
 
-* run these codes to pull the model and get the size of the folder (ollama_files)
+* run these codes to pull the model and get the size of the folder  [ollama_files](https://github.com/bluemusk24/LLM-RAG/tree/main/homework-02/ollama_files)
 
 ```bash
 docker exec -it ollama ollama pull gemma:2b 
